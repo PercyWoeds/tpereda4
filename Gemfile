@@ -1,4 +1,4 @@
- source 'http://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '4.2.5.1'
 
@@ -90,6 +90,16 @@ group :development, :test do
 end
 
 group :development do
+
+   gem 'capistrano',         require: false
+    gem 'capistrano-rvm',     require: false
+    gem 'capistrano-rails',   require: false
+    gem 'capistrano-bundler', require: false
+    gem 'capistrano3-puma',   require: false
+ 
+
+  gem 'puma'
+
   gem 'sqlite3'
   # Access an IRB console on exception pages or by using <%= console %> in views
  
